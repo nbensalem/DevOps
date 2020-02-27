@@ -1,0 +1,58 @@
+
+<ul class="full-list-article">
+
+  <li *ngFor="let company of companies" rel="catch-epage-id" class="list-article vcard" ><div data-slid="00000005316020-001" data-category="" class="shortlist-add"></div>
+
+    <span style="display:none;" id="tcname-00000005316020_001__fr">ZPM...</span>
+
+    <div class="main-title clearfix ">
+      <a [href]="company.website" [title]="company.title" class="company-name display-spinner" onclick="return tag.click.send({elem:this, name:'001', chapter1:'E_card', chapter2:'00000005316020', level2:'5', type:'navigation'});">
+        {{ company.title }}
+      </a>
+
+      <a rel="1" href="#link_map" id="rank_b1" title="Localiser cette entreprise sur la carte" class="rank"></a>
+
+    </div>
+
+    <div class="container">
+
+      <div  class="logo">
+			<span class="transition ecard-delegate">
+      	<a [href]="company.website">
+        <img  [src]="company.companyPicture" alt=""  style="width: 84px; height: 85px; margin-left: 0px; margin-top: 0px; opacity: 100;"/>
+        </a>
+      </span>
+      </div>
+
+
+      <div class="content ecard-delegate">
+
+				<span class="description">
+
+        {{company.description}}
+
+				</span>
+
+      </div>
+
+      <div class="website">
+
+				<span class="image">
+
+
+			<a [href]="company.website"><img [src]="company.productPicture"  /></a>
+				</span>
+
+      </div>
+
+    </div>
+
+    <div class="list-article-baseline clearfix">
+      <div class="loc"><span >{{company.adresse}}</span></div>
+      <div class="contact transition ecard-delegate" onclick="return tag.click.send({elem:this, name:'001', chapter1:'E_card', chapter2:'00000005316020', level2:'5', type:'navigation'});">Contactez cette entreprise</div>
+    </div>
+
+  </li>
+
+</ul>
+
